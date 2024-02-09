@@ -5,8 +5,118 @@
 
 body {
     height: 100vh;
+    margin: 0;
 }
 
+/* Header Section */
 header {
-
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: auto 0;
+    background-color: #333333;
+    height: 100vh;
 }
+
+header img {
+    position: absolute;
+    width: 8rem;
+    top: 1.563rem;
+    left: 1.563rem;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 4.5rem;
+    color: #fff;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+header p {
+    text-align: center;
+    width: 32%;
+    color: #aaaaaa;
+    font-size: 1.125rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+}
+
+header button {
+    align-self: center;
+    width: 10rem;
+    height: 3rem;
+    border: 0;
+    border-radius: 3.125rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    /* background-color: #49b970; */
+    background: linear-gradient(
+        to left,
+        #ff0000 50%,
+        #ff0000 50%,
+        #49b970 50%,
+        #49b970 50%
+    );
+    background-size: 200% 100%;
+    transition: background-position 0.3s ease;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-position: -100% 0;
+}
+/* Header Section */
+
+/* Media Query */
+
+/* Extra Small Devices */
+@media only screen and (max-width: 600px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header p {
+        width: 70%;
+    }
+}
+/* Extra Small Devices */
+
+/* Small devices */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header p {
+        width: 70%;
+    }
+}
+/* Small devices */
+
+/* Medium devices */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header p {
+        width: 70%;
+    }
+}
+/* Medium devices */
+
+/* Large devices */
+@media only screen and (min-width: 1025px) {
+    header p {
+        width: 70%;
+    }
+}
+/* Large devices */
+
+/* Media Query */
