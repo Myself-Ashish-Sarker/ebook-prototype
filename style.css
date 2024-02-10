@@ -4,8 +4,9 @@
 }
 
 body {
+    color: #aaaaaa;
     height: 100vh;
-    margin: 0;
+
 }
 
 /* Header Section */
@@ -39,7 +40,7 @@ header h1 {
 
 header p {
     text-align: center;
-    width: 32%;
+    width: 45%;
     color: #aaaaaa;
     font-size: 1.125rem;
     font-family: "Ubuntu", sans-serif;
@@ -73,10 +74,90 @@ header button:hover {
 }
 /* Header Section */
 
+/* Main Section */
+main {
+    margin-top: 5rem;
+}
+
+.body-img-one {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.body-img-one figure a img {
+    width: 35rem;
+    transition: 0.3s ease-in;
+    margin-bottom: 0.5rem;
+}
+
+.body-img-one figure a img:hover {
+    transform: translateY(-1rem);
+}
+
+.body-img-one figure figcaption a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Ubuntu", sans-serif;
+    color: #333333;
+    transition: 0.2s ease-in;
+}
+
+.body-img-one figure figcaption a:hover {
+    color: #49b970;
+}
+
+.body-img-one figure {
+    text-align: center;
+}
+
+.body-img-two {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.body-img-two figure a img {
+    width: 35rem;
+    transition: 0.3s ease-in;
+    margin-bottom: 0.5rem;
+}
+
+.body-img-two figure a img:hover {
+    transform: translateY(-1rem);
+}
+
+.body-img-two figure figcaption a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Ubuntu", sans-serif;
+    color: #333333;
+    transition: 0.2s ease-in;
+}
+
+.body-img-two figure figcaption a:hover {
+    color: #49b970;
+}
+
+.body-img-two figure {
+    text-align: center;
+}
+/* Main Section */
+
+
+
 /* Media Query */
 
 /* Extra Small Devices */
 @media only screen and (max-width: 600px) {
+
+    /* Header Section */
     header h1 {
         font-size: 3rem;
     }
@@ -84,11 +165,38 @@ header button:hover {
     header p {
         width: 70%;
     }
+    /* Header Section */
+    
+    /* Main Section */
+    .body-img-one {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .body-img-one figure a img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    .body-img-two {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .body-img-two figure a img {
+        max-width: 100%;
+        height: auto;
+    }
+    /* Main Section */
+    
 }
 /* Extra Small Devices */
 
 /* Small devices */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
+    
+    /* Header Section */
     header h1 {
         font-size: 3rem;
     }
@@ -96,11 +204,38 @@ header button:hover {
     header p {
         width: 70%;
     }
+    /* Header Section */
+
+    /* Main Section */
+    .body-img-one {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .body-img-one figure a img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    .body-img-two {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .body-img-two figure a img {
+        max-width: 100%;
+        height: auto;
+    }
+    /* Main Section */
+    
 }
 /* Small devices */
 
 /* Medium devices */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    
+    /* Header Section */
     header h1 {
         font-size: 3rem;
     }
@@ -108,15 +243,31 @@ header button:hover {
     header p {
         width: 70%;
     }
+    /* Header Section */
+
+    /* Main Section */
+    .body-img-one {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .body-img-one figure a img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    .body-img-two {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .body-img-two figure a img {
+        max-width: 100%;
+        height: auto;
+    }
+    /* Main Section */
 }
 /* Medium devices */
-
-/* Large devices */
-@media only screen and (min-width: 1025px) {
-    header p {
-        width: 70%;
-    }
-}
-/* Large devices */
 
 /* Media Query */
